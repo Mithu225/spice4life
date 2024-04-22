@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/variable.css" />
+    <script src="script.js" defer></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -44,35 +45,94 @@
             <ion-icon size="large" name="logo-instagram"></ion-icon>
           </div>
         </div>
+        <div class="hear-logo">
+          <img src="assets/footer-logo.png" alt="Header logo" />
+        </div>
       </div>
     </header>
-    <div class="index-body">
-      <div class="wrapper">
-        <ion-icon
-          class="wrapper-button"
-          size="large"
-          name="play-back-circle-outline"
-        ></ion-icon>
+   <div>
+      <h1 class="index-title">Most Popular Recipes This Week</h1>
+    </div>
+    <div class="wrapper">
+      <div class="carousel-container">
         <div class="carousel">
-          <img src="assets/image1.jpg" alt="Chicken Rice" />
-          <img src="assets/image2.jpg" alt="Pho" />
-          <img src="assets/image3.jpg" alt="Sushi" />
-          <img src="assets/image4.jpg" alt="Pad Thai" />
-          <img src="assets/image5.jpg" alt="Vietnamese spring rolls" />
-          <img src="assets/image6.jpg" alt="Vietnamese crab rice noodles" />
-          <img src="assets/image7.jpg" alt="Banh mi" />
-          <img src="assets/image8.jpg" alt="Vietnamese broken rice" />
-          <img src="assets/image9.jpg" alt="Chinese dumplings" />
-          <img src="assets/image10.jpg" alt="Ramen" />
-          <img src="assets/image11.jpg" alt="Chinese wonton noodles" />
-          <img src="assets/image12.jpg" alt="Korean glass noodles" />
-
-          <ion-icon
-            class="wrapper-button"
-            size="large"
-            name="play-forward-circle-outline"
-          ></ion-icon>
+          <div class="carousel-slides">
+            <div class="carousel-slide">
+              <div class="carousel-slide-container">
+                <img src="assets/img1.jpg" alt="Chicken rice" />
+                <p>Chicken rice</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="carousel-slide-container">
+                <img src="assets/img2.jpg" alt="Pho" />
+                <p>Pho</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="carousel-slide-container">
+                <img src="assets/img3.jpg" alt="Sushi" />
+                <p>Sushi</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="carousel-slide-container">
+                <img src="assets/img4.jpg" alt="Pad Thai" />
+                <p>Pad Thai</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="carousel-slide-container">
+                <img src="assets/img5.jpg" alt="Vietnamese spring rolls" />
+                <p>Vietnamese spring rolls</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="carousel-slide-container">
+                <img src="assets/img6.jpg" alt="Vietnamese crab rice noodles" />
+                <p>Vietnamese crab rice noodles</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="carousel-slide-container">
+                <img src="assets/img7.png" alt="Banh mi" />
+                <p>Banh mi</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="carousel-slide-container">
+                <img src="assets/img8.jpg" alt="Vietnamese broken rice" />
+                <p>Vietnamese broken rice</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="carousel-slide-container">
+                <img src="assets/img9.jpg" alt="Chinese shrimp dumplings" />
+                <p>Chinese shrimp dumplings</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="carousel-slide-container">
+                <img src="assets/img10.jpg" alt="Ramen" />
+                <p>Ramen</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="carousel-slide-container">
+                <img src="assets/img11.jpg" alt="Chinese wonton noodles" />
+                <p>Chinese wonton noodles</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="carousel-slide-container">
+                <img src="assets/img12.jpg" alt="Korean glass noodles" />
+                <p>Korean glass noodles</p>
+              </div>
+            </div>
+          </div>
         </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
       </div>
     </div>
     <footer>

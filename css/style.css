@@ -43,27 +43,25 @@ body {
   color: var(--color-text-light);
 }
 .header-container {
-  background-image: url("../assets/header-banner.jpg");
+  background-image: url("../assets/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: column;
+  padding: 0 2rem;
   background-position-x: left;
   background-position-y: center;
-  padding: 3rem;
 }
 
 .header-bar {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  text-align: center;
 }
 .home-banner {
   width: 100%;
 }
-.contact-img-banner {
-  padding: 0;
-}
+
 .menu-bar {
   display: flex;
   list-style: none;
@@ -88,7 +86,7 @@ body {
 .social-icon {
   padding: 1rem 0;
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .footer-bar {
