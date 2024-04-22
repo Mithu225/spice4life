@@ -1,0 +1,44 @@
+.index-body{
+  display:flex;
+  padding:0 1rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  
+
+}
+
+.wrapper {
+  max-width: 90rem;
+  position: relative;
+}
+.wrapper-button {
+  top: 40%;
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(-30%);
+}
+.wrapper-button:first-child {
+  left: 2.25rem;
+}
+.wrapper-button:last-child {
+  right: 2.25rem;
+}
+.wrapper.carousel {
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.carousel {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.carousel img {
+  object-fit: cover;
+  margin-left: 1rem;
+}
+.carousel img:first-child {
+  margin-left: 0;
+}
