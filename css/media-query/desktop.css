@@ -1,3 +1,6 @@
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
+    .subscribe-success {
+    height: 35rem;
+  }
 }

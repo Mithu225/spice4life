@@ -3,4 +3,7 @@
   .carousel-slide-container img {
     width: 100%;
   }
+  .subscribe-success {
+    height: 17rem;
+  }
 }

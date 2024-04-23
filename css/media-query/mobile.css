@@ -1,4 +1,7 @@
 /* For Mobile Portrait View */
 
 @media screen and (max-width: 500px) {
+  .subscribe-success {
+    height: 10rem;
+  }
 }
