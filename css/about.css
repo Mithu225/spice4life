@@ -1,3 +1,7 @@
+@import url("./variable.css");
+
+@import url("./media-query.css");
+
 .about-body {
   display: flex;
   padding: 3rem;

@@ -1,21 +1,18 @@
+@import url("./variable.css");
+
+@import url("./media-query.css");
+
 .button-back {
-  color: var(--color-button-sub);
+  background-color: var(--color-button-sub);
+  color: var(--color-text-light);
 }
 .subscribe-success {
-  background-image:url("../assets/thank-subscribe-cover.jpg");
+  background-image: url("../assets/thank-subscribe-cover.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-position-x: left;
-  background-position-y: center;
 }
-.subscribe-body {
-  display: flex;
-  align-items: center;
-  background: rgba(217, 217, 217, 0.53);
-  border-radius: 1rem;
-  flex-direction: column;
-}
+

@@ -1,0 +1,14 @@
+@import url("./variable.css");
+
+@import url("./media-query.css");
+
+.register-images {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+}
+.register-images img{
+      height: 30rem;
+  max-width: 17.5rem;
+}

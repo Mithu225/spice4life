@@ -1,3 +1,7 @@
+@import url("./variable.css");
+
+@import url("./media-query.css");
+
 .index-title {
   background-color: var(--color-index-title);
   text-align: center;

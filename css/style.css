@@ -1,8 +1,6 @@
 @import url("./variable.css");
-/* Feel free to add as many of these imports as you need */
 
-@import url("./media-query/");
-
+@import url("./media-query.css");
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
