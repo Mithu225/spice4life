@@ -31,6 +31,7 @@
 .carousel-slides {
   display: flex;
   gap: 1.75rem;
+  padding: 0 2.5rem;
 }
 
 .carousel-slide {
@@ -62,12 +63,30 @@
   border: 0.2rem solid black;
   border-radius: 1rem;
   padding: 1rem;
+  max-width: 20rem;
 }
 .carousel-slide-container img {
   height: 25rem;
   width: 100%;
+ border-radius: 1rem;
 }
 .carousel-slide-container p {
   color: var(--color-text-gray);
-text-align: center;
+  text-align: center;
+}
+
+.recipe-row {
+  display: flex;
+  align-items: center;
+  gap:2rem;
+  padding: 2rem;
+}
+.recipe-line-container img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 2rem;
+}
+.recipe-line-container p {
+  color: var(--color-text-gray);
+  text-align: center;
 }

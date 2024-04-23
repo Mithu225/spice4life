@@ -23,6 +23,6 @@ function showSlides(n) {
   ).style.transform = `translateX(${offset}%)`;
 }
 
-/*setInterval(() => {
-  nextSlide();
-}, 3000);
+// setInterval(() => {
+//   nextSlide();
+// }, 3000);
