@@ -25,9 +25,9 @@
         <div class="header-bar">
           <div class="header-menu">
             <ul class="menu-bar">
-              <a class="menu-bar-item" href="index.html">Home</a>
+              <a class="menu-bar-item" href="/">Home</a>
 
-              <a class="menu-bar-item" href="about.html">About</a>
+              <a class="menu-bar-item" href="/about.html">About</a>
 
               <a class="menu-bar-item" href="recipes.html">Recipes</a>
 
@@ -53,13 +53,10 @@
         </div>
       </div>
     </header>
-    <div>
-      <h1 class="register-title">KEEP YOURSELF UPDATED</h1>
-    </div>
-    <div>
-      <h3 class="register-content">
-        We'll send fresh recipes, advice, and more right to your email!
-      </h3>
+    <div class="register-title">
+      <h1>KEEP YOURSELF UPDATED</h1>
+
+      <h3>We'll send fresh recipes, advice, and more right to your email!</h3>
     </div>
     <div class="register-container">
       <div class="register-images">
@@ -71,7 +68,8 @@
         </div>
         <div class="single-image">
           <img
-            src="../assets/subcribe2.jpg"
+            class="down-img"
+            src="../assets/subscribe2.jpg"
             alt="The image discribes about subscribe page"
           />
         </div>
@@ -83,10 +81,37 @@
         </div>
         <div class="single-image">
           <img
-            src="../assets/subcribe4.jpg"
+            class="down-img"
+            src="../assets/subscribe4.jpg"
             alt="The image discribes about subscribe page"
           />
         </div>
+      </div>
+      <div class="form-info">
+        <form class="form">
+          <p>
+            Receive a free e-cookbook and one recipe every week when you
+            subscribe to our newsletter!
+          </p>
+
+          <div class="form-content">
+            <input type="text" id="name" name="name" placeholder="Name" />
+
+            <input type="text" id="email" name="email" placeholder="Email" />
+
+            <input
+              type="password"
+              id="phone"
+              name="phone"
+              placeholder="Password"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="subscribe">
+        <a class="button button-subscribe" href="/thank-subscribe.html"
+          >SUBSCRIBE</a
+        >
       </div>
     </div>
     <footer>
@@ -94,7 +119,7 @@
         <div>
           <img
             class="footer-logo"
-            src="./assets/footer-logo.png"
+            src="../assets/footer-logo.png"
             alt="Footer blog logo "
           />
         </div>
