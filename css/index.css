@@ -79,18 +79,5 @@
   text-align: center;
 }
 
-.recipe-row {
-  display: flex;
-  align-items: center;
-  gap:2rem;
-  padding: 2rem;
-}
-.recipe-line-container img {
-  height: 20rem;
-  width: 20rem;
-  border-radius: 2rem;
-}
-.recipe-line-container p {
-  color: var(--color-text-gray);
-  text-align: center;
-}
+
+

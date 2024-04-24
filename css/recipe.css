@@ -1,0 +1,7 @@
+@import url("./variable.css");
+
+@import url("./media-query.css");
+
+.recipes h1{
+    text-align: center;
+}
