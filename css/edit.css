@@ -1,0 +1,14 @@
+@import url("./variable.css");
+
+@import url("./media-query.css");
+
+.edit-title h1 {
+  text-align: center;
+}
+.edit-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ padding:1rem;
+}
+
