@@ -15,20 +15,22 @@
   padding: 2rem;
 }
 .register-images img {
-  height: 30rem;
-  max-width: 18rem;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .down-img {
   padding-top: 1rem;
 }
 
-
 .button-subscribe {
   background-color: var(--color-button-sub);
   color: var(--color-text-light);
-  
 }
-.subscribe{
-    text-align: center;
-    padding-bottom: 2rem;
+.subscribe {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.single-image{
+  width: 25%;
 }

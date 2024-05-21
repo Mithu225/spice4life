@@ -1,7 +1,9 @@
 @import url("./variable.css");
 
 @import url("./media-query.css");
-
+.about-title {
+  text-align: center;
+}
 .about-body {
   display: flex;
   padding: 3rem;
@@ -10,13 +12,11 @@
   line-height: normal;
 }
 
-.button-connect{
-    background-color: var(--color-index-title);
-    color:var(--color-text-light);
-    
- 
+.button-connect {
+  background-color: var(--color-index-title);
+  color: var(--color-text-light);
 }
-.btn-connect{
-    padding-bottom:6rem;
-    text-align: center;
+.btn-connect {
+  padding-bottom: 6rem;
+  text-align: center;
 }

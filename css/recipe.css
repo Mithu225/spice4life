@@ -1,7 +1,7 @@
 @import url("./variable.css");
-
+@import url("./index.css");
 @import url("./media-query.css");
 
-.recipes h1{
-    text-align: center;
+.recipes h1 {
+  text-align: center;
 }

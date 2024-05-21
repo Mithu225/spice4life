@@ -2,13 +2,36 @@
 
 @import url("./media-query.css");
 
-.edit-title h1 {
-  text-align: center;
-}
+@import url("./style.css");
+
 .edit-blog {
   display: flex;
   flex-direction: column;
-  justify-content: center;
- padding:1rem;
+  padding: 0 5rem;
 }
-
+.edit-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 1rem;
+}
+.button-edit-page {
+  display: flex;
+  gap: 2rem;
+  padding: 3rem;
+}
+.button-submit,
+.button-cancel {
+  background-color: var(--color-button-sub);
+  color: var(--color-text-light);
+}
+.edit-container input,
+.edit-container textarea {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 2px solid #c87007;
+}
+.container-title {
+  color: var(--color-text-gray);
+  padding: 1rem 5rem;
+}

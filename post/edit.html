@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The homepage of Spice4life" />
+    <meta name="description" content="The edit page of Spice4life" />
     <title>Spice4life | Recipes</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/edit.css" />
@@ -55,7 +55,7 @@
         </div>
       </div>
     </header>
-    <div class="edit-title">
+    <div class="container-title">
       <h1>Edit blog post</h1>
     </div>
     <div class="edit-blog">
@@ -65,23 +65,32 @@
           <input type="text" id="post-title" name="post-title" required />
 
           <label for="post-content">Content:</label>
-        <textarea
-          aria-label="message"
-          rows="10"
-          cols="45"
-          name="comment"
-          form="userform"
-          id="message"
-        ></textarea>
-        
+          <textarea
+            aria-label="message"
+            rows="10"
+            cols="45"
+            name="comment"
+            form="userform"
+            id="message"
+          ></textarea>
+
+          <label for="key-words">Tags:</label>
+          <input type="url" id="key-words" name="key-words" />
+
           <label for="post-image">Image URL:</label>
           <input type="url" id="post-image" name="post-image" />
+
+          <label for="image-alt">Image Alt:</label>
+          <input type="url" id="image-alt" name="image-alt" />
         </div>
-        
       </form>
-      <div class="button-update">
-        <button type="submit">Update Post</button>
-        <button id="delete-button">Delete Post</button>
+      <div class="button-edit-page">
+        <div>
+          <a class="button button-submit">Update Post</a>
+        </div>
+        <div>
+          <a class="button button-cancel">Cancel Post</a>
+        </div>
       </div>
     </div>
 
