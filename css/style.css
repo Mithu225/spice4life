@@ -97,12 +97,12 @@ body {
 .social-icon {
   padding: 1rem 0;
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .footer-bar {
   background-color: var(--color-footer);
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,7 +111,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 3rem;
   align-items: center;
 }
 .recipe-line-container p {
@@ -177,6 +176,7 @@ input::placeholder {
   align-items: center;
   gap: 2rem;
   padding: 2rem;
+  flex-wrap: wrap;
 }
 .recipe-line-container img {
   height: 100%;
@@ -189,6 +189,10 @@ input::placeholder {
   text-align: center;
 }
 .recipe-line {
-  width: calc(30% - 2rem);
-  height: 20rem;
+  width: calc(34% - 2rem);
+  height: 25rem;
+  padding: 1rem 0;
+}
+.recipe-line a {
+  text-decoration: none;
 }

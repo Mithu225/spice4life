@@ -1,6 +1,18 @@
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
-    .subscribe-success {
+  .subscribe-success {
     height: 35rem;
   }
+.footer-right {
+  padding: 2rem;
 }
+
+.edit-blog {
+  padding: 0 5rem;
+}
+
+.edit-container {
+  width: 50%;
+}
+}
+

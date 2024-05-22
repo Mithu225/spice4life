@@ -4,4 +4,51 @@
   .subscribe-success {
     height: 10rem;
   }
+  .header-container {
+    position: relative;
+  }
+  .header-logo {
+    position: absolute;
+    left: 0;
+    bottom: 53px;
+  }
+  .header-logo img {
+    width: 8rem;
+  }
+  .recipe-line {
+    width: calc(110% - 2rem);
+  }
+  .footer-logo {
+    width: 8rem;
+  }
+  .index-title,
+  .about-title,
+  .register-title {
+    font-size: var(--text-size-large);
+  }
+
+  .about-body {
+    flex-wrap: wrap;
+  }
+  .about-body img {
+    width: 100%;
+  }
+  .register-title {
+    text-align: center;
+  }
+
+  .login-text img {
+    width: 100%;
+  }
+
+  .edit-blog {
+    padding: 0 1rem;
+  }
+
+  .edit-container {
+    width: 100%;
+  }
+  .button-edit-page {
+    padding: 2rem 1rem;
+  }
 }
