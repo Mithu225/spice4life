@@ -1,4 +1,10 @@
-import { fetchAPI, showMessage, hideMessage, setValueToStore } from "./core.js";
+import {
+  fetchAPI,
+  showMessage,
+  hideMessage,
+  setValueToStore,
+  navigate,
+} from "./core.js";
 import { NOROFF_USER_INFO } from "./constants.js";
 
 const loginSubmitBtnElm = document.querySelector("#login-submit-button");
@@ -22,6 +28,7 @@ loginSubmitBtnElm.addEventListener("click", async (e) => {
       });
       showMessage("Login is success");
       setValueToStore(NOROFF_USER_INFO, data.data);
+      navigate("/post");
     } catch (error) {
       showMessage(error.data.errors[0].message, "error");
     }

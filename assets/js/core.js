@@ -1,4 +1,4 @@
-import { API_BASE_URL, NOROFF_USER_INFO } from "./constants.js";
+import { API_BASE_URL, NOROFF_USER_INFO, DEFAULT_NAME } from "./constants.js";
 import { renderHeader } from "./header.js";
 import { renderFooter } from "./footer.js";
 
@@ -107,6 +107,9 @@ export function showMessage(message, type = "success") {
   coreMessageElm.classList.add("core-message", `core-message-${type}`);
 
   formElm.appendChild(coreMessageElm);
+  setTimeout(() => {
+    coreMessageElm.remove();
+  }, 5000);
 }
 
 export function hideMessage() {
@@ -119,7 +122,12 @@ export function hideMessage() {
 }
 
 export function getUserInfo() {
-  return getValueFromStore(NOROFF_USER_INFO);
+  return getValueFromStore(NOROFF_USER_INFO) || { name: DEFAULT_NAME };
+}
+
+export function logout() {
+  deleteValueFromStore(NOROFF_USER_INFO);
+  navigate("/");
 }
 
 export function navigate(url) {
@@ -160,9 +168,29 @@ export function renderLoading(isLoading) {
   }
 }
 
+export function fullURL() {
+  return window.location.href;
+}
+
 export function getParam(name) {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const value = urlParams.get(name);
   return value;
+}
+
+export function copyToClipboard(text) {
+  navigator.clipboard
+    .writeText(text)
+    .then(() => {
+      console.log("Text copied to clipboard:", text);
+      showMessage("Text copied to clipboard: " + text);
+    })
+    .catch((err) => {
+      console.error("Unable to copy text to clipboard:", err);
+      showMessage(
+        "Unable to copy text to clipboard. Please try again.",
+        "error"
+      );
+    });
 }

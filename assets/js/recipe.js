@@ -3,7 +3,7 @@ import { fetchAPI, showMessage, getUserInfo } from "./core.js";
 function renderPostItem(post) {
   return `
   <div class="recipe-line">
-    <a href="recipes/detail.html?postId=${post.id}">
+    <a href="/recipes/detail.html?postId=${post.id}">
         <div class="recipe-line-container">
         <img src="${post.media.url}" alt="${post.media.alt}" />
 
@@ -23,7 +23,7 @@ async function init() {
     const data = await fetchAPI(`/blog/posts/${userInfo.name}`, "GET");
     const listPostElm = document.querySelector(".recipe-row");
 
-    listPostElm.innerHTML = renderPostList(data.data);
+    listPostElm.innerHTML = renderPostList(data.data).join("");
   } catch (error) {
     showMessage("Failed to load the data", "error");
   }

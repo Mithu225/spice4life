@@ -17,7 +17,7 @@ function renderPostItem(post) {
 }
 
 function renderPostList(posts) {
-  return posts.map(renderPostItem).join(",");
+  return posts.map(renderPostItem);
 }
 
 async function init() {
@@ -25,7 +25,7 @@ async function init() {
   try {
     const data = await fetchAPI(`/blog/posts/${userInfo.name}`, "GET");
     const listPostElm = document.querySelector(".admin-container");
-    listPostElm.innerHTML = renderPostList(data.data);
+    listPostElm.innerHTML = renderPostList(data.data).join("");
 
     const postEditElm = document.querySelectorAll(".post-edit-btn");
     postEditElm.forEach((elm) => {

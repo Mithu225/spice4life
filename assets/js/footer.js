@@ -10,7 +10,7 @@ export function renderFooter() {
         </div>
         <div class="footer-right">
           <div>
-            <a class="button button-login" href="./register.html">FOLLOW US</a>
+            <a class="button button-login" href="/thank-subscribe.html">FOLLOW US</a>
           </div>
 
           <div class="social-icon">

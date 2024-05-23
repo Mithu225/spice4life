@@ -1,5 +1,5 @@
 import { NOROFF_USER_INFO } from "./constants.js";
-import { getValueFromStore } from "./core.js";
+import { getValueFromStore, logout } from "./core.js";
 
 export function renderHeader() {
   const userInfo = getValueFromStore(NOROFF_USER_INFO);
@@ -18,10 +18,10 @@ export function renderHeader() {
 
               ${
                 userName
-                  ? ` <a class="menu-bar-item" href="register.html">
+                  ? `<button id="logout" class="button menu-bar-item" type="button">
                     Logout
-                  </a>`
-                  : ` <a class="menu-bar-item" href="register.html">
+                  </button>`
+                  : `<a class="menu-bar-item" href="/account/register.html">
                     Register
                   </a>`
               }
@@ -31,7 +31,7 @@ export function renderHeader() {
             userName
               ? `<div class="button-index">
                 <a class="button button-login" href="/post/index.html">
-                  Hello ${userName}
+                  Hello ${userName} | Admin panel
                 </a>
               </div>`
               : `<div class="button-index">
@@ -56,4 +56,9 @@ export function renderHeader() {
 
   const headerElm = document.querySelector("header");
   headerElm.innerHTML = headerHTML;
+
+  if (userName) {
+    const logoutElm = document.querySelector("#logout");
+    logoutElm.addEventListener("click", logout);
+  }
 }

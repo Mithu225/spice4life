@@ -14,6 +14,12 @@ const postImageAltElm = document.querySelector("#post-image-alt");
 const editPostSubmitButton = document.querySelector("#edit-post-submit-button");
 const postId = getParam("id");
 
+const cancelPostEditButton = document.querySelector("#cancel-post-edit-button");
+
+cancelPostEditButton.addEventListener("click", () => {
+  navigate("/post");
+});
+
 editPostSubmitButton.addEventListener("click", async (e) => {
   e.preventDefault();
   hideMessage();

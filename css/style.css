@@ -177,6 +177,7 @@ input::placeholder {
   gap: 2rem;
   padding: 2rem;
   flex-wrap: wrap;
+  padding-right: 0;
 }
 .recipe-line-container img {
   height: 100%;
@@ -189,7 +190,7 @@ input::placeholder {
   text-align: center;
 }
 .recipe-line {
-  width: calc(34% - 2rem);
+  width: calc(33% - 2rem);
   height: 25rem;
   padding: 1rem 0;
 }
@@ -202,6 +203,10 @@ input::placeholder {
   padding: 1rem;
   color: white;
   margin-top: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
 }
 
 .core-message-error {

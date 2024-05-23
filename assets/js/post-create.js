@@ -10,6 +10,14 @@ const createPostSubmitButton = document.querySelector(
   "#create-post-submit-button"
 );
 
+const cancelPostSubmitButton = document.querySelector(
+  "#cancel-post-submit-button"
+);
+
+cancelPostSubmitButton.addEventListener("click", () => {
+  navigate("/post");
+});
+
 createPostSubmitButton.addEventListener("click", async (e) => {
   e.preventDefault();
   hideMessage();
