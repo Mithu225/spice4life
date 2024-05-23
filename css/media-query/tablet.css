@@ -6,4 +6,7 @@
   .subscribe-success {
     height: 17rem;
   }
+  .recipe-line {
+    width: calc(50% - 2rem);
+  }
 }
