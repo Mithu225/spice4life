@@ -4,6 +4,7 @@ import {
   hideMessage,
   getUserInfo,
   navigate,
+  getParam,
 } from "./core.js";
 const postTitleElm = document.querySelector("#post-title");
 const postMessageElm = document.querySelector("#message");
@@ -11,9 +12,7 @@ const postKeywordsElm = document.querySelector("#keywords");
 const postImageElm = document.querySelector("#post-image");
 const postImageAltElm = document.querySelector("#post-image-alt");
 const editPostSubmitButton = document.querySelector("#edit-post-submit-button");
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-const postId = urlParams.get("id");
+const postId = getParam("id");
 
 editPostSubmitButton.addEventListener("click", async (e) => {
   e.preventDefault();

@@ -6,6 +6,7 @@
   background-color: var(--color-index-title);
   text-align: center;
   margin: 0;
+  padding: 1rem 0;
 }
 .index-body {
   display: flex;
@@ -78,4 +79,3 @@
   color: var(--color-text-gray);
   text-align: center;
 }
-

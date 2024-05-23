@@ -27,3 +27,11 @@
   padding: 1rem;
   text-align: center;
 }
+
+.recipe-img {
+  max-width: 20%;
+}
+
+.recipe-img > img {
+  width: 100%;
+}

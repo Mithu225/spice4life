@@ -100,7 +100,7 @@ export function removeElementsByClass(className) {
 export function showMessage(message, type = "success") {
   removeElementsByClass("core-message");
 
-  const formElm = document.querySelector("form");
+  const formElm = document.querySelector("body");
   const coreMessageElm = document.createElement("div");
   coreMessageElm.innerHTML = message;
   coreMessageElm.style.display = "block";
@@ -158,4 +158,11 @@ export function renderLoading(isLoading) {
       existed.remove();
     }
   }
+}
+
+export function getParam(name) {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const value = urlParams.get(name);
+  return value;
 }

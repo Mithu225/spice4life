@@ -9,17 +9,15 @@ import {
 } from "./core.js";
 
 function renderPostItem(post) {
-  return `<span class="post-item-name">${post.title}</span>
+  return `<div class="post-item"><span class="post-item-name">${post.title}</span>
             <div class="post-item-actions">
                 <button data-id="${post.id}" class="post-edit-btn">Edit</button>
                 <button data-id="${post.id}" class="post-delete-btn">Delete</button>
-            </div></li>`;
+            </div></div>`;
 }
 
 function renderPostList(posts) {
-  return `<div class="post-item">
-            ${posts.map(renderPostItem)}
-        </div>`;
+  return posts.map(renderPostItem).join(",");
 }
 
 async function init() {

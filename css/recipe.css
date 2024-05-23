@@ -5,3 +5,7 @@
 .recipes h1 {
   text-align: center;
 }
+
+.recipe-img {
+  max-width: 20%;
+}
