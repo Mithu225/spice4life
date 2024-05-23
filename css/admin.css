@@ -13,10 +13,42 @@
   padding-bottom: 2rem;
 }
 .admin-container {
-  display: flex;
-  justify-content: center;
-  gap: 10rem;
+  max-width: 90%;
+  margin: 0 auto;
 }
-.admin-container-right {
-  padding: 1rem;
+
+.post-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.post-item-name {
+  flex: 1;
+}
+
+.post-item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.post-edit-btn,
+.post-delete-btn {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.post-edit-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.post-delete-btn {
+  background-color: #f44336;
+  color: white;
 }
