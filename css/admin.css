@@ -44,11 +44,11 @@
 }
 
 .post-edit-btn {
-  background-color: #4caf50;
+  background-color: var(--color-button-create);
   color: white;
 }
 
 .post-delete-btn {
-  background-color: #f44336;
+  background-color: var(--color-button-delete);
   color: white;
 }

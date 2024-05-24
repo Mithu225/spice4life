@@ -13,7 +13,7 @@
 }
 
 .button-connect {
-  background-color: var(--color-index-title);
+  background-color: var(--color-button-index);
   color: var(--color-text-light);
 }
 .btn-connect {

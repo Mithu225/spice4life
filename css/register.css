@@ -24,8 +24,9 @@
 }
 
 .button-register {
-  background-color: var(--color-button-sub);
+  background-color: #A65F08;
   color: var(--color-text-light);
+  font-size: var(--text-size-large);
 }
 .register {
   text-align: center;
@@ -34,3 +35,4 @@
 .single-image {
   width: 25%;
 }
+

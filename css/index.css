@@ -65,7 +65,7 @@
 }
 
 .carousel-slide-container {
-  border: 0.2rem solid black;
+  border: 0.2rem solid gainsboro;
   border-radius: 1rem;
   padding: 1rem;
   max-width: 20rem;

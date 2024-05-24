@@ -1,6 +1,7 @@
 @import url("./variable.css");
 
 @import url("./media-query.css");
+
 .login-title {
   color: var(--color-login-title);
   text-align: center;
@@ -15,7 +16,7 @@
   width: 100%;
 }
 .button-log-in {
-  background-color: var(--color-button-sub);
+  background-color: #a65f08;
   color: var(--color-text-light);
 }
 .login {

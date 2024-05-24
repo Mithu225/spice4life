@@ -1,6 +1,6 @@
 /* For Mobile Portrait View */
 
-@media screen and (max-width: 500px) {
+@media (min-width: 320px) {
   .subscribe-success {
     height: 10rem;
   }
@@ -13,7 +13,7 @@
     bottom: 53px;
   }
   .header-logo img {
-    width: 8rem;
+    width: 7rem;
   }
   .recipe-line {
     width: calc(110% - 2rem);
@@ -50,5 +50,12 @@
   }
   .button-edit-page {
     padding: 2rem 1rem;
+  }
+  .button-index {
+    text-align: right;
+  }
+
+  .recipe-row {
+    padding-right: 2rem;
   }
 }

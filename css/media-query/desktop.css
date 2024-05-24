@@ -1,18 +1,21 @@
 /* For Desktop View */
-@media screen and (min-width: 1024px) {
+@media (min-width: 1281px) {
   .subscribe-success {
     height: 35rem;
   }
-.footer-right {
-  padding: 2rem;
-}
+  .footer-right {
+    padding: 2rem;
+  }
 
-.edit-blog {
-  padding: 0 5rem;
-}
+  .edit-blog {
+    padding: 0 5rem;
+  }
 
-.edit-container {
-  width: 50%;
-}
-}
+  .edit-container {
+    width: 50%;
+  }
 
+  .recipe-line {
+    width: calc(33% - 2rem);
+  }
+}

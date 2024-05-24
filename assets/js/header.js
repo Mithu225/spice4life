@@ -18,7 +18,7 @@ export function renderHeader() {
 
               ${
                 userName
-                  ? `<button id="logout" class="button menu-bar-item" type="button">
+                  ? `<a id="logout" class="menu-bar-item">
                     Logout
                   </button>`
                   : `<a class="menu-bar-item" href="/account/register.html">
@@ -31,7 +31,7 @@ export function renderHeader() {
             userName
               ? `<div class="button-index">
                 <a class="button button-login" href="/post/index.html">
-                  Hello ${userName} | Admin panel
+                  Hello ${userName} | Admin
                 </a>
               </div>`
               : `<div class="button-index">

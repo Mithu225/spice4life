@@ -6,7 +6,9 @@
   text-align: center;
   color: var(--color-text-recipe-title);
 }
-
+.recipe-body {
+  min-height: 55vh;
+}
 .recipe-single {
   display: flex;
   gap: 3rem;

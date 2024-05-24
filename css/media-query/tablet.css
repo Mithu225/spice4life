@@ -1,5 +1,5 @@
 /* For Tablet View */
-@media screen and (max-width: 1024px) {
+@media (min-width: 801px) {
   .carousel-slide-container img {
     width: 100%;
   }
@@ -8,5 +8,11 @@
   }
   .recipe-line {
     width: calc(50% - 2rem);
+  }
+  .header-logo img {
+    width: 7rem;
+  }
+  .button-index {
+    text-align: right;
   }
 }
