@@ -68,10 +68,9 @@
   border: 0.2rem solid gainsboro;
   border-radius: 1rem;
   padding: 1rem;
-  /* max-width: 20rem; */
 }
 .carousel-slide-container img {
-  height: 25rem;
+  height: 25vw;
   width: 100%;
   border-radius: 1rem;
   object-fit: cover;
