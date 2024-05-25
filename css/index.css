@@ -40,7 +40,7 @@
 }
 
 .carousel-slide {
-  flex: 0 0 calc(100% / 3 - 2rem);
+  flex: 0 0 calc(100% / 3);
 }
 
 .prev,
@@ -68,12 +68,13 @@
   border: 0.2rem solid gainsboro;
   border-radius: 1rem;
   padding: 1rem;
-  max-width: 20rem;
+  /* max-width: 20rem; */
 }
 .carousel-slide-container img {
   height: 25rem;
   width: 100%;
   border-radius: 1rem;
+  object-fit: cover;
 }
 .carousel-slide-container p {
   color: var(--color-text-gray);

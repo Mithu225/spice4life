@@ -26,7 +26,10 @@ export function parseString(value) {
 export async function setValueToStore(key, value) {
   return new Promise((resolve) => {
     store[key] = value;
-    localStorage.setItem(key, stringifyValue(value));
+    localStorage.setItem(
+      key,
+      typeof value === "object" ? stringifyValue(value) : value
+    );
     resolve(value);
   });
 }
@@ -72,7 +75,7 @@ export function fetchAPI(url, method, options = {}) {
     body: options.body,
     data: options.data,
   })
-    .then((response) => {
+    .then(async (response) => {
       // Check if the response status indicates an error
       if (!response.ok) {
         // Parse the JSON error response
@@ -83,7 +86,13 @@ export function fetchAPI(url, method, options = {}) {
           throw error; // Throw the error to be caught by the catch block
         });
       }
-      return response.json(); // Parse the JSON from the response if no error
+
+      try {
+        const data = await response.json();
+        return data;
+      } catch {
+        return {};
+      }
     })
     .finally(() => {
       renderLoading(false);
@@ -146,10 +155,12 @@ export function showModal(content) {
   `;
 
   bodyElm.appendChild(coreModalElm);
+
+  return coreModalElm;
 }
 
 export function hideModal() {
-  const coreModalElm = document.querySelector("#core-modal");
+  const coreModalElm = document.getElementById("core-modal");
   coreModalElm.remove();
 }
 
@@ -193,4 +204,38 @@ export function copyToClipboard(text) {
         "error"
       );
     });
+}
+
+export function handleTag(tags) {
+  return tags.split(",").map((item) => item.toLowerCase().trim());
+}
+
+export function sortBy(data, propertyName, reverse = false) {
+  const filteredData = [...data].sort((a, b) =>
+    reverse
+      ? b[propertyName].localeCompare(a[propertyName])
+      : a[propertyName].localeCompare(b[propertyName])
+  );
+
+  return filteredData;
+}
+
+export function sortByDateTime(data, propertyName, reverse = false) {
+  const filteredData = [...data].sort((a, b) =>
+    reverse
+      ? new Date(b[propertyName]) - new Date(a[propertyName])
+      : new Date(a[propertyName]) - new Date(b[propertyName])
+  );
+
+  return filteredData;
+}
+
+export function debounce(func, delay) {
+  let debounceTimer;
+  return function () {
+    const context = this;
+    const args = arguments;
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => func.apply(context, args), delay);
+  };
 }

@@ -238,6 +238,20 @@ input::placeholder {
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
+.modal-confirmation-yes {
+  background-color: var(--color-button-delete);
+  color: white;
+}
+
+.modal-confirmation-no {
+}
+
+.modal-confirmation-btn-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
 .close {
   color: #aaa;
   float: right;
@@ -285,4 +299,36 @@ input::placeholder {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.recipe-filter {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: end;
+}
+
+.recipe-filter label {
+  font-size: 1.5rem;
+}
+.recipe-filter select {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 2px solid #c87007;
+  width: 10rem;
+}
+.recipe-filter option {
+  padding-right: 1rem;
+}
+
+.recipe-filter > .filter-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.recipe-filter input {
+  padding: 0.6rem 0.5rem;
+  border-radius: 5px;
+  border: 2px solid #c87007;
 }

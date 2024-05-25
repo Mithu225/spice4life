@@ -1,4 +1,5 @@
 import { fetchAPI, showMessage, getUserInfo } from "./core.js";
+import { renderPost } from "./render-post.js";
 
 let slideIndex = 0;
 showSlides(slideIndex);
@@ -25,19 +26,6 @@ function showSlides(n) {
   ).style.transform = `translateX(${offset}%)`;
 }
 
-function renderPostItem(post) {
-  return `
-  <div class="recipe-line">
-    <a href="/recipes/detail.html?postId=${post.id}">
-        <div class="recipe-line-container">
-        <img src="${post.media.url}" alt="${post.media.alt}" />
-
-        <p>${post.title}</p>
-        </div>
-    </a>
-    </div>`;
-}
-
 function renderPostCarousel(post) {
   return `
     <div class="carousel-slide">
@@ -51,12 +39,18 @@ function renderPostCarousel(post) {
     `;
 }
 
-function renderPostList(posts) {
-  return posts.map(renderPostItem);
-}
-
 function renderPostCarouselList(posts) {
   return posts.map(renderPostCarousel);
+}
+
+async function getAndRenderPopularData() {
+  const userInfo = getUserInfo();
+  const data = await fetchAPI(
+    `/blog/posts/${userInfo.name}?_tag=popular`,
+    "GET"
+  );
+  const listPostCarouselElm = document.querySelector(".carousel-slides");
+  listPostCarouselElm.innerHTML = renderPostCarouselList(data.data).join("");
 }
 
 async function init() {
@@ -66,16 +60,11 @@ async function init() {
   prevSlideElm.addEventListener("click", prevSlide);
   nextSlideElm.addEventListener("click", nextSlide);
 
-  const userInfo = getUserInfo();
   try {
-    const data = await fetchAPI(`/blog/posts/${userInfo.name}`, "GET");
-    const listPostElm = document.querySelector(".recipe-row");
-    const listPostCarouselElm = document.querySelector(".carousel-slides");
+    await getAndRenderPopularData();
 
-    listPostElm.innerHTML = renderPostList(data.data).join("");
-    listPostCarouselElm.innerHTML = renderPostCarouselList(data.data).join("");
+    await renderPost();
   } catch (error) {
-    console.error(error);
     showMessage(`${error.message}`, "error");
   }
 }

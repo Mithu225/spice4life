@@ -1,7 +1,7 @@
+import { checkAuth } from "./auth.js";
 import {
   fetchAPI,
   showMessage,
-  hideMessage,
   getUserInfo,
   navigate,
   showModal,
@@ -12,7 +12,7 @@ function renderPostItem(post) {
   return `<div class="post-item"><span class="post-item-name">${post.title}</span>
             <div class="post-item-actions">
                 <button data-id="${post.id}" class="post-edit-btn">Edit</button>
-                <button data-id="${post.id}" class="post-delete-btn">Delete</button>
+                <button data-id="${post.id}" data-title="${post.title}" class="post-delete-btn">Delete</button>
             </div></div>`;
 }
 
@@ -20,13 +20,23 @@ function renderPostList(posts) {
   return posts.map(renderPostItem);
 }
 
-async function init() {
+async function getDataAndRender() {
   const userInfo = getUserInfo();
-  try {
-    const data = await fetchAPI(`/blog/posts/${userInfo.name}`, "GET");
-    const listPostElm = document.querySelector(".admin-container");
-    listPostElm.innerHTML = renderPostList(data.data).join("");
+  const data = await fetchAPI(`/blog/posts/${userInfo.name}`, "GET");
+  const listPostElm = document.querySelector(".admin-container");
+  listPostElm.innerHTML = renderPostList(data.data).join("");
+}
 
+async function removePost(postId) {
+  const userInfo = getUserInfo();
+  await fetchAPI(`/blog/posts/${userInfo.name}/${postId}`, "DELETE");
+}
+
+async function init() {
+  checkAuth();
+
+  await getDataAndRender();
+  try {
     const postEditElm = document.querySelectorAll(".post-edit-btn");
     postEditElm.forEach((elm) => {
       elm.addEventListener("click", (event) => {
@@ -39,10 +49,11 @@ async function init() {
     postDeleteElm.forEach((elm) => {
       elm.addEventListener("click", (event) => {
         const postId = event.target.getAttribute("data-id");
+        const postTitle = event.target.getAttribute("data-title");
         const confirmation = `
             <div class="modal-confirmation">
                 <p>Are you sure to delete this post?</p>
-                <div>
+                <div class="modal-confirmation-btn-group">
                     <button class="modal-confirmation-yes button">YES</<button>
                     <button class="modal-confirmation-no button">NO</<button>
                 </div>
@@ -56,10 +67,10 @@ async function init() {
 
         confirmationYes.forEach((elm) => {
           elm.addEventListener("click", async () => {
-            await fetchAPI(`/blog/posts/${userInfo.name}/${postId}`, "DELETE");
-
+            await removePost(postId);
+            await getDataAndRender();
             hideModal();
-            showMessage("Your post is deleted");
+            showMessage(`Your post (${postTitle}) is deleted`, "success");
           });
         });
 

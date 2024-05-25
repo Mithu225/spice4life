@@ -1,3 +1,4 @@
+import { checkAuth } from "./auth.js";
 import {
   fetchAPI,
   showMessage,
@@ -5,6 +6,7 @@ import {
   getUserInfo,
   navigate,
   getParam,
+  handleTag,
 } from "./core.js";
 const postTitleElm = document.querySelector("#post-title");
 const postMessageElm = document.querySelector("#message");
@@ -45,7 +47,7 @@ editPostSubmitButton.addEventListener("click", async (e) => {
           body: JSON.stringify({
             title: postTitleValue,
             body: postMessageValue,
-            tags: postKeywordsValue.split(","),
+            tags: handleTag(postKeywordsValue),
             media: {
               url: postImageValue,
               alt: postImageAltValue,
@@ -64,6 +66,7 @@ editPostSubmitButton.addEventListener("click", async (e) => {
 });
 
 async function init() {
+  checkAuth();
   const userInfo = getUserInfo();
   try {
     const { data } = await fetchAPI(
