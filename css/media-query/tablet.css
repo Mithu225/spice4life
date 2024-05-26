@@ -15,4 +15,7 @@
   .button-index {
     text-align: right;
   }
+  .about-body img {
+    width: 50%;
+  }
 }
