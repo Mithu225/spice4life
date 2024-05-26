@@ -25,7 +25,7 @@ registerSubmitBtnElm.addEventListener("click", async (e) => {
           password: registerPasswordValue,
         }),
       });
-      console.log(data, "data");
+      
       showMessage("Your info is created");
     } catch (error) {
       showMessage(error.data.errors[0].message, "error");

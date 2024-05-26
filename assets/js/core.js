@@ -76,14 +76,14 @@ export function fetchAPI(url, method, options = {}) {
     data: options.data,
   })
     .then(async (response) => {
-      // Check if the response status indicates an error
+      
       if (!response.ok) {
-        // Parse the JSON error response
+        
         return response.json().then((errorData) => {
-          // Create a new error object with the error message
+         
           const error = new Error("Network response was not ok");
-          error.data = errorData; // Attach the error data
-          throw error; // Throw the error to be caught by the catch block
+          error.data = errorData; 
+          throw error; 
         });
       }
 
@@ -194,11 +194,11 @@ export function copyToClipboard(text) {
   navigator.clipboard
     .writeText(text)
     .then(() => {
-      console.log("Text copied to clipboard:", text);
+      
       showMessage("Text copied to clipboard: " + text);
     })
     .catch((err) => {
-      console.error("Unable to copy text to clipboard:", err);
+      
       showMessage(
         "Unable to copy text to clipboard. Please try again.",
         "error"
