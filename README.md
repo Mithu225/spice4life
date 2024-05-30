@@ -4,4 +4,6 @@ Hi there! The creator of the Spice4life blog is me, Thu. My culinary adventure s
 
 Join Us on This Culinary Adventure
 To stay up to date on the newest recipes, culinary advice, and food tales, subscribe to the Spice4life blog. Become a member of our community of food enthusiasts by subscribing to our newsletter and following us on social media. Together, let's prepare, consume, and enjoy the world of food!
-Use this file to describe your project.
+
+Live Preview: [https://foody.thuhuynh.no/](https://foody.thuhuynh.no/)
+
