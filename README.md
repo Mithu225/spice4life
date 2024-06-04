@@ -1,8 +1,7 @@
 # FED1 Project Exam - Spice4life Food blog.
 
 
-<img width="1435" alt="Food-blog " src="https://github.com/Mithu225/spice4life/assets/145982119/f5fe7f72-67dc-4e01-b319-8f13f386a1b7">
-
+<img width="1435" alt="Food-blog " src="https://github.com/Mithu225/spice4life/assets/145982119/dd553ba3-78bc-4855-9369-2aa696b446f2">
 
 ## Description
 Hi there! The creator of the Spice4life blog is me, Thu. My culinary adventure started a long time ago and has taken me to many kitchens and cuisines. I want to share my love of food, my best recipes, and the backstories that go into each dish on this blog. Food, in my opinion, has the ability to unite people and foster enduring memories.
@@ -48,7 +47,7 @@ npm run start
 
 ## Contributing
 
-I'm reaching out to discuss the possibility of you contributing to Rainydays's websitre. I believe your unique perspective would greatly benefit our audience.
+I'm reaching out to discuss the possibility of you contributing to Spice4life's websitre. I believe your unique perspective would greatly benefit our audience.
 
 Contributing to my website offers several benefits, including exposure to a relevant audience, opportunities for collaboration, and the chance to showcase your expertise .
 
