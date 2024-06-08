@@ -26,7 +26,7 @@ This is where you list how to get the project started. It typically just include
 1. Clone the repo:
 
 ```
-git@github.com:Mithu225/spice4life.git
+git clone git@github.com:Mithu225/spice4life.git
 ```
 
 2. Install the dependencies:
