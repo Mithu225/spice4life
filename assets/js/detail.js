@@ -32,9 +32,9 @@ async function init() {
     recipesTitleElm.innerHTML = data.title;
     recipeInfo.innerHTML = data.body;
     recipeTextInfo.innerHTML = `
-        <p>Recipe: ${data.title}</p>
-        <p>Author: ${data.author.name}</p>
-        <p>Date : ${new Date(data.created).toDateString()}</p>
+        <p><strong>Recipe</strong>: ${data.title}</p>
+        <p><strong>Author</strong>: ${data.author.name}</p>
+        <p><strong>Date</strong>: ${new Date(data.created).toDateString()}</p>
     `;
     recipeImg.innerHTML = `<img src="${data.media.url}" alt="${data.media.alt}" />`;
 

@@ -11,6 +11,10 @@
     padding: 0 5rem;
   }
 
+  .menu-bar {
+    display: flex;
+  }
+
   .edit-container {
     width: 50%;
   }

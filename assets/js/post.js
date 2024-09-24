@@ -54,8 +54,8 @@ async function init() {
             <div class="modal-confirmation">
                 <p>Are you sure to delete this post?</p>
                 <div class="modal-confirmation-btn-group">
-                    <button class="modal-confirmation-yes button">YES</<button>
-                    <button class="modal-confirmation-no button">NO</<button>
+                    <button class="modal-confirmation-yes button">Yes</<button>
+                    <button class="modal-confirmation-no button">No</<button>
                 </div>
             </div>
         `;
