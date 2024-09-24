@@ -4,8 +4,8 @@
   --text-size-large: 1.25rem;
   --text-size-xlarge: 1.5rem;
   --text-size-xxlarge: 2rem;
-  --text-size-xxxlarge:2.5rem;
-  --text-size-xxxxlarge:3rem;
+  --text-size-xxxlarge: 2.5rem;
+  --text-size-xxxxlarge: 3rem;
   --text-font-main: Arial;
 
   --color-text-dark: #000000;
@@ -17,13 +17,14 @@
   --color-text-spice4life: #f17575;
   --color-text-recipe-title: #857109;
   --color-index-title: #e29b9b;
+  --color-index-title-bold: #6a2d2d;
   --color-footer: #e2e0dd;
-  --color-login-title:#7F2020;
+  --color-login-title: #7f2020;
 
   --color-button-index: #694747;
   --color-button-login: #c87007;
   --color-button-sub: #916403;
   --color-button-share: #035491;
-  --color-button-create:#308246;
-  --color-button-delete:#E91B0C;
+  --color-button-create: #308246;
+  --color-button-delete: #e91b0c;
 }

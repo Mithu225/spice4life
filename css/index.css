@@ -4,6 +4,7 @@
 
 .index-title {
   background-color: var(--color-index-title);
+  color: var(--color-index-title-bold);
   text-align: center;
   margin: 0;
   padding: 1rem 0;
@@ -80,6 +81,4 @@
   text-align: center;
 }
 
-a {
-  text-decoration: none;
-}
+

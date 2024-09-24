@@ -9,15 +9,11 @@ export function renderFooter() {
           />
         </div>
         <div class="footer-right">
-          <div>
-            <a class="button button-login" href="/thank-subscribe.html">FOLLOW US</a>
-          </div>
-
           <div class="social-icon">
-            <ion-icon size="large" name="logo-facebook"></ion-icon>
-            <ion-icon size="large" name="logo-google"></ion-icon>
-            <ion-icon size="large" name="logo-twitter"></ion-icon>
-            <ion-icon size="large" name="logo-instagram"></ion-icon>
+            <ion-icon size="large" name="logo-facebook" color="favorite"></ion-icon>
+            <ion-icon size="large" name="logo-google" color="favorite"></ion-icon>
+            <ion-icon size="large" name="logo-twitter" color="favorite"></ion-icon>
+            <ion-icon size="large" name="logo-instagram" color="favorite"></ion-icon>
           </div>
           <div>
             <p class="copyright">

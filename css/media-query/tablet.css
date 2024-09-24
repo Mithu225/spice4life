@@ -18,4 +18,12 @@
   .about-body img {
     width: 50%;
   }
+
+  .menu-bar {
+    display: flex;
+  }
+
+  .recipe-filter {
+    justify-content: center;
+  }
 }

@@ -6,11 +6,18 @@
   }
   .header-container {
     position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .header-logo {
-    position: absolute;
     left: 0;
     bottom: 53px;
+  }
+  .menu-bar {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .header-logo img {
     width: 7rem;
@@ -64,5 +71,8 @@
   }
   .recipe-img {
     max-width: 100%;
+  }
+  .recipe-filter {
+    justify-content: start;
   }
 }

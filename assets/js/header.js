@@ -7,7 +7,16 @@ export function renderHeader() {
 
   const headerHTML = `
     <div class="header-container">
+        <div class="header-logo">
+          <img src="../assets/footer-logo.png" alt="Header logo" />
+        </div>
         <div class="header-bar">
+          <div class="social-icon">
+            <ion-icon size="large" name="logo-facebook" color="favorite"></ion-icon>
+            <ion-icon size="large" name="logo-google" color="favorite"></ion-icon>
+            <ion-icon size="large" name="logo-twitter" color="favorite"></ion-icon>
+            <ion-icon size="large" name="logo-instagram" color="favorite" ></ion-icon>
+          </div>
           <div class="header-menu">
             <ul class="menu-bar">
               <a class="menu-bar-item" href="/index.html">Home</a>
@@ -25,32 +34,23 @@ export function renderHeader() {
                     Register
                   </a>`
               }
+
+              ${
+                userName
+                  ? `<a href="/post/index.html" class="menu-bar-item">
+                    Hello ${userName} | Admin
+                  </button>`
+                  : `<a class="menu-bar-item" href="/account/login.html">
+                    Login
+                  </a>`
+              }
             </ul>
           </div>
-          ${
-            userName
-              ? `<div class="button-index">
-                <a class="button button-login" href="/post/index.html">
-                  Hello ${userName} | Admin
-                </a>
-              </div>`
-              : `<div class="button-index">
-                <a class="button button-login" href="/account/login.html">
-                  LOGIN
-                </a>
-              </div>`
-          }
           
-          <div class="social-icon">
-            <ion-icon size="large" name="logo-facebook"></ion-icon>
-            <ion-icon size="large" name="logo-google"></ion-icon>
-            <ion-icon size="large" name="logo-twitter"></ion-icon>
-            <ion-icon size="large" name="logo-instagram"></ion-icon>
-          </div>
+          
+         
         </div>
-        <div class="header-logo">
-          <img src="../assets/footer-logo.png" alt="Header logo" />
-        </div>
+        
       </div>
  `;
 

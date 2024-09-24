@@ -19,6 +19,14 @@
 .recipe-info {
   padding: 1rem 3rem;
   text-align: center;
+  line-height: 1.5;
+}
+
+.recipe-text-info {
+  background: #ededed;
+  padding: 1rem;
+  color: #000000;
+  border-radius: 0.5rem;
 }
 
 .button-share {
