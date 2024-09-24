@@ -144,6 +144,7 @@ input::placeholder {
   max-width: 40rem;
   text-align: center;
   padding: 2rem;
+  color: var(--color-button-index);
 }
 .form-content {
   width: 100%;
@@ -155,7 +156,7 @@ input::placeholder {
 
 .form input {
   border-radius: 5px;
-  border: 2px solid #c87007;
+  border: 2px solid var(--color-button-index);
   padding: 1rem;
   font-size: 1rem;
   font-weight: 500;
@@ -329,7 +330,8 @@ input::placeholder {
 .recipe-filter select {
   padding: 0.5rem;
   border-radius: 5px;
-  border: 2px solid #c87007;
+  border: 2px solid var(--color-index-title);
+  color: var(--color-index-title-bold);
   width: 10rem;
 }
 .recipe-filter option {
@@ -340,12 +342,13 @@ input::placeholder {
   display: flex;
   align-items: center;
   gap: 1rem;
+  color: var(--color-index-title);
 }
 
 .recipe-filter input {
   padding: 0.6rem 0.5rem;
   border-radius: 5px;
-  border: 2px solid #c87007;
+  border: 2px solid var(--color-button-index);
 }
 
 a {

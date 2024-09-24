@@ -4,6 +4,7 @@
 
 .recipes h1 {
   text-align: center;
+  color: var(--color-index-title);
 }
 
 .recipe-img {
