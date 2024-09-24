@@ -21,7 +21,7 @@ export function renderFooter() {
           </div>
           <div>
             <p class="copyright">
-              Copyright © 2024 spice4life, all rights reserved
+              Copyright © 2024 spice4life, developed by Thu Huynh.
             </p>
           </div>
         </div>

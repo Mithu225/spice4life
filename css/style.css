@@ -115,6 +115,9 @@ body {
 }
 .recipe-line-container p {
   margin: 0;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 input:focus-visible {
   outline-color: var(--color-text-form);
@@ -179,6 +182,7 @@ input::placeholder {
   padding: 2rem;
   flex-wrap: wrap;
   padding-right: 0;
+  padding-bottom: 5rem;
 }
 .recipe-line-container img {
   height: 100%;
