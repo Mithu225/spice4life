@@ -9,9 +9,9 @@
   --text-font-main: Arial;
 
   --color-text-dark: #000000;
-  --color-text-gray: #7e5710;
+  --color-text-gray: #e29b9b;
   --color-text-light: #ffffff;
-  --color-text-form: #c87007;
+  --color-text-form: #e29b9b;
   --color-text-menu: #794a4a;
   --color-text-recipe-title: #7f2020;
   --color-text-spice4life: #f17575;
@@ -21,10 +21,10 @@
   --color-footer: #e2e0dd;
   --color-login-title: #7f2020;
 
-  --color-button-index: #694747;
-  --color-button-login: #c87007;
-  --color-button-sub: #916403;
-  --color-button-share: #035491;
+  --color-button-index: #e29b9b;
+  --color-button-login: #e29b9b;
+  --color-button-sub: #e29b9b;
+  --color-button-share: #e29b9b;
   --color-button-create: #308246;
   --color-button-delete: #e91b0c;
 }

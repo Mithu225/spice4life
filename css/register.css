@@ -24,7 +24,7 @@
 }
 
 .button-register {
-  background-color: #A65F08;
+  background-color: var(--color-button-index);
   color: var(--color-text-light);
   font-size: var(--text-size-large);
 }
@@ -35,4 +35,3 @@
 .single-image {
   width: 25%;
 }
-

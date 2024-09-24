@@ -16,7 +16,7 @@
   width: 100%;
 }
 .button-log-in {
-  background-color: #a65f08;
+  background-color: var(--color-button-index);
   color: var(--color-text-light);
 }
 .login {
