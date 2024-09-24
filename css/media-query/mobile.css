@@ -58,4 +58,11 @@
   .recipe-row {
     padding-right: 2rem;
   }
+
+  .recipe-single {
+    flex-direction: column;
+  }
+  .recipe-img {
+    max-width: 100%;
+  }
 }

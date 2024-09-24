@@ -79,3 +79,7 @@
   color: var(--color-text-gray);
   text-align: center;
 }
+
+a {
+  text-decoration: none;
+}
